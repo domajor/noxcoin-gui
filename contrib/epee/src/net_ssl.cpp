@@ -29,6 +29,7 @@
 
 #include <string.h>
 #include <thread>
+#include "common.h"
 #include <boost/asio/post.hpp>
 #include <boost/asio/ssl.hpp>
 #include <boost/asio/steady_timer.hpp>

@@ -1,4 +1,5 @@
 #include "net/net_helper.h"
+#include "common.h"
 
 namespace epee
 {

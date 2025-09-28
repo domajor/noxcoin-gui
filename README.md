@@ -22,13 +22,13 @@
 
 ## Build (Linux)
 ~~~bash
-git clone --recursive https://github.com/domajor/noxcoin
-cd noxcoin
+git clone --recursive https://github.com/domajor/noxcoin-gui.git
+cd noxcoin-gui
 sudo apt update && sudo apt install build-essential cmake pkg-config libssl-dev libzmq3-dev \
 libunbound-dev libsodium-dev libunwind8-dev liblzma-dev libreadline-dev libexpat1-dev \
 qttools5-dev-tools libhidapi-dev libusb-1.0-0-dev libprotobuf-dev protobuf-compiler \
 libudev-dev libboost-all-dev
-make release
+make -j$(nproc)
 ./build/release/bin/noxcoind --detach
 ~~~
 Binaries will be in `build/release/bin`.
@@ -56,7 +56,11 @@ pacman -Syu
 pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake \
   mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq \
   mingw-w64-x86_64-libsodium mingw-w64-x86_64-hidapi mingw-w64-x86_64-unbound
-make release-static -j"$(nproc)"
+mkdir build_win
+cd build_win
+cmake .. -G "Ninja" -DCMAKE_CXX_FLAGS="-Wno-error" -DCMAKE_C_FLAGS="-Wno-error"
+ninja -v
+
 ~~~
 Executables will be in `build/release/bin`.
 
@@ -69,13 +73,13 @@ gmake release
 ### OpenBSD
 ~~~bash
 pkg_add cmake gmake zeromq libiconv boost libunbound
-gmake
+gmake release
 ~~~
 
 ### NetBSD
 ~~~bash
 pkg_add cmake gmake boost-libs protobuf readline libusb1 zeromq git-base pkgconf
-gmake release
+gmake 
 ~~~
 
 ### Solaris
