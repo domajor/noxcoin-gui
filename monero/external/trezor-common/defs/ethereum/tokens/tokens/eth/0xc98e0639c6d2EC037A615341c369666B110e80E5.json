@@ -1,0 +1,33 @@
+{
+  "symbol": "Enox",
+  "address": "0xc98e0639c6d2EC037A615341c369666B110e80E5",
+  "decimals": 8,
+  "name": "enoxcoin",
+  "ens_address": "",
+  "website": "https://enox.io/",
+  "logo": {
+    "src": "",
+    "width": "",
+    "height": "",
+    "ipfs_hash": ""
+  },
+  "support": {
+    "email": "support@enox.io",
+    "url": ""
+  },
+  "social": {
+    "blog": "",
+    "chat": "",
+    "facebook": "https://www.facebook.com/enoxcoin/",
+    "forum": "",
+    "github": "https://github.com/enoxcoin/",
+    "gitter": "",
+    "instagram": "",
+    "linkedin": "",
+    "reddit": "https://www.reddit.com/user/enoxcoin/",
+    "slack": "",
+    "telegram": "https://t.me/joinEnox/",
+    "twitter": "https://www.twitter.com/enoxCoin",
+    "youtube": ""
+  }
+}

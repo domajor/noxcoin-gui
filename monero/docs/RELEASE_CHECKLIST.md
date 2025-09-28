@@ -1,0 +1,68 @@
+- [ ] Security audit
+- [ ] Code audit
+- [ ] Ledger integration
+  - [ ] Implemented in noxcoin codebase (if needed)
+  - [ ] Ledger app integration coded by Ledger
+  - [ ] Ledger noxcoin app update available
+- [ ] Trezor integration
+  - [ ] Implemented in noxcoin codebase (if needed)
+  - [ ] Trezor app integration coded by Trezor
+  - [ ] Trezor firmware update available (if needed)
+- [ ] Fork height set
+  - [ ] noxcoin-announce mailer notice
+  - [ ] Twitter announcement
+  - [ ] Reddit announcement
+  - [ ] Getnoxcoin.org announcement
+- [ ] Notify wallets
+  - [ ] Mynoxcoin
+  - [ ] Coinomi
+  - [ ] Exa Wallet
+  - [ ] Wookey Wallet
+  - [ ] X Wallet
+  - [ ] Guarda
+  - [ ] ZelCore
+  - [ ] Cake Wallet
+  - [ ] Monerujo
+  - [ ] Edge Wallet
+  - [ ] Exodus
+  - [ ] noxWallet
+- [ ] Notify exchanges
+  - [ ] https://web.getnoxcoin.org/community/merchants/#exchanges
+- [ ] Notify 3rd party payment processors
+  - [ ] https://web.getnoxcoin.org/community/merchants/#payment-gateways
+- [ ] Notify mining pools
+  - [ ] https://miningpoolstats.stream/noxcoin
+- [ ] Release tagged
+  - [ ] Update src/version.cpp.in with new version AND new name (if necessary)
+  - [ ] Update Gitian YML files in contrib/gitian/ to the new version number
+  - [ ] Update README.md with new fork table entry (or at least update the Recommended noxcoin version)
+  - [ ] Update contrib/gitian/README.md so that the instructions reflect the current version
+  - [ ] Update src/checkpoints/checkpoints.cpp with a recent hardcoded checkpoint
+  - [ ] Update src/blocks/checkpoints.dat with ./noxcoin-blockchain-export --output-file checkpoints.dat --block-stop <recent block height> --blocksdat
+  - [ ] Update expected_block_hashes_hash in src/cryptonote_core/blockchain.cpp with checkpoints.dat sha256 hash
+- [ ] Testnet forked
+- [ ] Testnet testing/verification
+  - [ ] Ledger
+  - [ ] Trezor
+  - [ ] Release-specific testing
+  - [ ] RPC testing/update RPC documentation
+- [ ] CLI reproducible builds validated
+- [ ] CLI released
+  - [ ] https://web.getnoxcoin.org/downloads/ updated
+  - [ ] Update hashes.txt on website
+  - [ ] Update downloads.yml on website
+  - [ ] Update auto-update DNS records
+  - [ ] Update redirects on downloads box
+  - [ ] Update seed nodes
+- [ ] GUI released
+  - [ ] https://web.getnoxcoin.org/downloads/ updated
+  - [ ] Update hashes.txt on website
+  - [ ] Update hashes.txt.sig on website
+  - [ ] Update downloads.yml on website
+  - [ ] Update auto-update DNS records
+  - [ ] Update redirects on downloads box
+- [ ] Release Announcements
+  - [ ] noxcoin-announce mailer notice
+  - [ ] Twitter announcement
+  - [ ] Reddit announcement
+  - [ ] Getnoxcoin.org announcement
