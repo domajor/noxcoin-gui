@@ -1,0 +1,28 @@
+# Build output
+build/
+build-*/
+cmake-build-*/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Qt
+*.user
+*.pro.user*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node / JS
+node_modules/
+
+# Binaries
+*.app
+*.exe
+*.dll
+*.so
+

@@ -1,0 +1,6 @@
+[submodule "external/quirc"]
+	path = external/quirc
+	url = https://github.com/dlbeer/quirc/
+[submodule "noxcoin"]
+	path = noxcoin
+	url = https://github.com/domajor/noxcoin.git
